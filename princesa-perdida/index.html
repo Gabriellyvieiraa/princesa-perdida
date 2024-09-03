@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A princesa perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/inicio.png" alt="A princesa está perdida">
+            <p>Era uma vez, em um reino distante uma princesa chamada Gabi. Ela era conhecida por sua bondade, inteligência e curiosidade inabalável. Desde pequena, Gabi adorava explorar, em um dia ensolarado ela acaba se perdendo em uma floresta, distante do castela. Ajude a princesa Gabi a encontrar o caminho de volta para o castelo</p>
+            <button class="btn-proximo" data-proximo="1">Ir para a montanha</button>
+            <button class="btn-proximo" data-proximo="2">Ir para o rio</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/montanha.jpg" alt="A princesa encontra o castelo" width="50%">
+            <p>A princesa lembra que passou pelas montanhas e acredita estar indo no caminho certo, do alto da montanha ela consegue ver o labirinto e pantano.</p>
+            <button class="btn-proximo" data-proximo="3">Ir para o labirinto</button>	
+            <button class="btn-proximo" data-proximo="4">Ir para o pantano</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="img/rio.png" alt="A princesa está perdida" width="70%">
+            <p></p>
+            <button class="btn-proximo" data-proximo="0">A princesa se perdeu, voltar para o começo.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="img/labirinto.jpg" alt="A princesa encontra o castelo">
+            <p>Após muito tempo, ela consegue encontrar duas luzes no fim do labirinto.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir em frente</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/pantano.jpg" alt="imagem voltando para casa e desitindo da aventura" width="70%">
+            <p>A princesa não se lembra de ter passado por pantano e decidiu voltar todo o caminho.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar para o começo.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <img src="img/princesa2.png" alt="A princesa encontra o castelo">
+            <p>A princesa fica em dúvida, ajude ela a escolher qual luz seguir.</p>
+            <button class="btn-proximo" data-proximo="11">Luz à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Luz à direita</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/monstro.jpg" alt="A princesa encontra o castelo" width="30%">
+            <p>A luz era uma criatura terrivel e voltou correndo para o inicio de onde se perdeu.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar correndo para o começo.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/castelo.jpg" alt="A princesa encontra o castelo">
+            <p>A princesa fica aliviada pois chegou ao castelo, muito obrigado por ajuda-lá a encontrar o caminho</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
